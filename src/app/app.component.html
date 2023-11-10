@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="d-flex flex-column" *ngIf="!isFinised">
+    <div>
+      Current Turn: {{currentTurn}}
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(1)">{{cellsValue[1]}}</span>
+      <span class="eachCell" (click)="inputTick(2)">{{cellsValue[2]}}</span>
+      <span class="eachCell" (click)="inputTick(3)">{{cellsValue[3]}}</span>
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(4)">{{cellsValue[4]}}</span>
+      <span class="eachCell" (click)="inputTick(5)">{{cellsValue[5]}}</span>
+      <span class="eachCell" (click)="inputTick(6)">{{cellsValue[6]}}</span>
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(7)">{{cellsValue[7]}}</span>
+      <span class="eachCell" (click)="inputTick(8)">{{cellsValue[8]}}</span>
+      <span class="eachCell" (click)="inputTick(9)">{{cellsValue[9]}}</span>
+    </div>
+  </div>
+  <div class="d-flex flex-column" *ngIf="isFinised">
+    <div>
+      Winner: {{currentTurn}}
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(1)">{{cellsValue[1]}}</span>
+      <span class="eachCell" (click)="inputTick(2)">{{cellsValue[2]}}</span>
+      <span class="eachCell" (click)="inputTick(3)">{{cellsValue[3]}}</span>
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(4)">{{cellsValue[4]}}</span>
+      <span class="eachCell" (click)="inputTick(5)">{{cellsValue[5]}}</span>
+      <span class="eachCell" (click)="inputTick(6)">{{cellsValue[6]}}</span>
+    </div>
+    <div class="d-flex">
+      <span class="eachCell" (click)="inputTick(7)">{{cellsValue[7]}}</span>
+      <span class="eachCell" (click)="inputTick(8)">{{cellsValue[8]}}</span>
+      <span class="eachCell" (click)="inputTick(9)">{{cellsValue[9]}}</span>
+    </div>
+    <div *ngIf="isFinised">
+      <button (click)="resetGame()">Reset Game</button>
+    </div>
+  </div>
+</div>

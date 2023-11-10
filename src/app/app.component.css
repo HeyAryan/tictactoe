@@ -1,0 +1,8 @@
+.eachCell{
+    text-align: center;
+    align-items:center;
+    font-size: 90px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
